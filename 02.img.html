@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/img.css"> -->
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .banner_img {
+            width: 500px;
+            height: 500px;
+        }
+
+        .article_img {
+            width: 500px;
+            height: 500px;
+        }
+
+        .xoxo_img {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+    </style>
+
+</head>
+
+<body>
+    <img class="banner_img" src="https://cdn.pixabay.com/photo/2023/03/03/08/22/skulls-7827155_960_720.jpg" alt="">
+    <!-- <img class="article_img" src="https://cdn.pixabay.com/photo/2023/01/22/16/45/nature-7736939_960_720.jpg" alt="">
+    <img class="xoxo_img" src="https://cdn.pixabay.com/photo/2023/02/26/14/04/deer-7815910_960_720.jpg" alt=""> -->
+
+
+    <script>
+        const img = document.querySelector('.banner_img');
+        let isFirstImg = true;
+
+        img.addEventListener('click', function () {
+            console.log('img clicked');
+
+            if (isFirstImg) {
+                img.setAttribute('src', 'https://cdn.pixabay.com/photo/2023/01/22/16/45/nature-7736939_960_720.jpg');
+            }
+            else {
+                img.setAttribute('src', 'https://cdn.pixabay.com/photo/2023/03/03/08/22/skulls-7827155_960_720.jpg')
+            }
+            isFirstImg = !isFirstImg;
+            console.log(isFirstImg)
+        })
+// 原值的相反，可再前加入!表示 isFirstImg = true ; !isFirstImg = false
+
+
+    </script>
+</body>
+
+</html>

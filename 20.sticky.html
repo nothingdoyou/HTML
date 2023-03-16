@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            height: 50px;
+            background-color: coral;
+        }
+
+        /* = main > div {} */
+        .left,
+        .right {
+            border: 1px solid greenyellow;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .left {
+            width: 30%;
+            position: sticky;
+            top: 0;
+        }
+
+        .right {
+            width: 60%;
+            font-size: 30px;
+        }
+
+        footer {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        nav
+    </nav>
+
+    <main>
+        <div class="left">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio delectus repellendus earum libero
+                dolorum totam quibusdam iusto facilis, necessitatibus non. Illo repellat eius eaque delectus illum ex,
+                libero doloremque minus.</p>
+        </div>
+        <div class="right">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio delectus repellendus earum libero
+                dolorum totam quibusdam iusto facilis, necessitatibus non. Illo repellat eius eaque delectus illum ex,
+                libero doloremque minus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio delectus repellendus earum libero
+                dolorum totam quibusdam iusto facilis, necessitatibus non. Illo repellat eius eaque delectus illum ex,
+                libero doloremque minus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio delectus repellendus earum libero
+                dolorum totam quibusdam iusto facilis, necessitatibus non. Illo repellat eius eaque delectus illum ex,
+                libero doloremque minus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio delectus repellendus earum libero
+                dolorum totam quibusdam iusto facilis, necessitatibus non. Illo repellat eius eaque delectus illum
+                ex,libero doloremque minus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio delectus repellendus earum libero
+                dolorum totam quibusdam iusto facilis, necessitatibus non. Illo repellat eius eaque delectus illum
+                ex,libero doloremque minus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio delectus repellendus earum libero
+                dolorum totam quibusdam iusto facilis, necessitatibus non. Illo repellat eius eaque delectus illum ex,
+                libero doloremque minus.</p>
+
+
+
+        </div>
+    </main>
+
+    <footer>footer</footer>
+</body>
+
+</html>

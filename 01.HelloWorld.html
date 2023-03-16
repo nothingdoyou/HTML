@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: aquamarine;
+        }
+
+        ul>li {
+            display: inline-block;
+            line-height: 50px;
+
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        ul>li>a {
+            text-decoration: none;
+            color: rgb(226, 132, 44);
+        }
+
+
+        /* #globalnav>li {}
+
+        #globalnav li {} */
+
+        .hide {
+            opacity: 0;
+            transition: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./01.HelloWorld.html">HelloWrold</a></li>
+            <li><a href="./02.img.html">img</a></li>
+            <li><a href="./3.block.html">Link3</a></li>
+            <li><a href="./4.inline-block.html">Link4</a></li>
+        </ul>
+    </nav>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, non. Iusto beatae error cupiditate molestias,
+        assumenda, recusandae ut ducimus incidunt corrupti laboriosam corporis! Reiciendis nemo quaerat quo, aliquam
+        ratione in?</p>
+
+    <button>Click</button>
+    <div class="hide">
+        <h2>Hello world</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quod accusantium praesentium perferendis et
+            necessitatibus ducimus cumque placeat iste animi adipisci dolorum, in voluptatum libero tempora neque quo
+            saepe suscipit.</p>
+    </div>
+
+    <script>
+        const btn = document.querySelector('button');
+        const hideDiv = document.querySelector('.hide');
+
+        btn.addEventListener('click', function () {
+            hideDiv.style.opacity = 1;
+
+        });
+    </script>
+</body>
+
+</html>

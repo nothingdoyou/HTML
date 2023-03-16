@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normann</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgb(51, 51, 51);
+            width: 100%;
+        }
+
+        .nav-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .middle a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .right button {
+            padding: 10px 20px;
+        }
+
+        @media screen and (min-width:768px) {
+            .nav-area {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            header .container {
+                width: 80%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .middle a {
+                margin-right: 10px;
+            }
+        }
+
+        #heroSection {
+            /* margin-bottom: 100px; */
+            background-color: rgb(51, 51, 51);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+
+
+        #heroSection img {
+            width: 100%;
+        }
+
+
+        @media screen and (min-width:768px) {
+            #heroSection {
+                display: flex;
+                background-color: rgb(51, 51, 51);
+
+            }
+
+            #heroSection .box {
+                width: 50%;
+
+            }
+
+            #heroSection .box:nth-child(1) {
+                order: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #heroSection .box:nth-child(2) {
+
+                order: 1;
+            }
+        }
+
+
+        #Elementor {
+            background-color: burlywood;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #Elementor h2,
+        p {
+            text-align: center;
+            width: 50%;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        #Elementor p {
+            margin-bottom: 20px;
+        }
+
+        .demo-img img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-area">
+                <div class="left">
+                    <img src="./normann-imgs-main/section1/logo-white.svg" alt="">
+                </div>
+                <div class="middle">
+                    <a href="#">Demos</a>
+                    <a href="#">Features</a>
+                    <a href="#">Documentation</a>
+                </div>
+                <div class="right">
+                    <button>Purchase now</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="heroSection">
+            <div class="box">
+                <h1>Normann - Furniture</h1>
+                <h1> Store WooCommerce
+                    Theme</h1>
+
+            </div>
+            <div class="box">
+                <img src="./normann-imgs-main/section1/ldp_img-1.png" alt="">
+            </div>
+        </section>
+        <section id="Elementor">
+            <h2>
+                Elementor
+            </h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam eligendi deserunt eaque iure rerum
+                maiores veritatis est assumenda nihil architecto corrupti labore, reprehenderit nostrum quidem
+                temporibus harum similique accusamus odio.
+            </p>
+            <div class="demo-img">
+                <img src="./normann-imgs-main/section3/ldp_img-1-1.png" alt="">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
